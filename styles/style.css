@@ -488,17 +488,13 @@ hr {
         justify-items: center;
     }
 
-    .footer-container {
-        width: ;
-    }
-
     .view-button {
         margin-top: 0px;
     }
 
     .footer-container {
         width: 1000px;
-        height: 700px;
+        height: 400px;
     }
 
     .footer-heading {
