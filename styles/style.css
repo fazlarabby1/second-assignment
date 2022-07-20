@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
 
 /* Header Style */
-header {
+.top-banner {
     color: white;
     background-color: black;
     width: 1321px;
@@ -12,9 +12,6 @@ header {
     border-style: none;
     border-radius: 30px;
     margin: 50px 140px;
-}
-
-.top-banner {
     display: flex;
     justify-content: space-evenly;
 }
@@ -121,10 +118,6 @@ body {
     text-decoration: none;
     color: #161616;
 }
-
-/* .button-style>a:visited {
-    background-color: #DD0000;
-} */
 
 /* Blogs Styles */
 .blogs {
@@ -234,6 +227,10 @@ body {
 /*---------------------------------------
         Button Color For Active Page
 -----------------------------------------*/
+.button-style:hover {
+    background-color: #DD0000;
+}
+
 
 /*---------------------------------------
             Footer Styles
@@ -242,6 +239,7 @@ body {
     color: white;
     background-color: #161616;
     height: 444px;
+    width: 100vw;
 }
 
 .footer-heading {
@@ -281,4 +279,257 @@ hr {
     text-decoration: none;
     margin-left: 20px;
     color: aqua;
+}
+
+/*-----------------------------
+        Media Queries Styles
+-----------------------------*/
+
+/* For Mobile Devices */
+@media only screen and (max-width: 480px) {
+    body {
+        width: 688px;
+    }
+
+    .top-banner {
+        display: block;
+        height: 800px;
+        margin-left: 0px;
+        width: 100vw;
+    }
+
+    .header-text {
+        padding-left: 50px;
+        padding-top: 50px;
+        width: 600px;
+    }
+
+    #show {
+        font-size: 30px;
+        margin-top: -20px;
+        margin-bottom: 80px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .page-info {
+        border: 1px solid;
+        border-style: none;
+        width: 300px;
+        text-align: center;
+    }
+
+    .live-button {
+        margin-left: 65px
+    }
+
+    .header-image {
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .banner-player img {
+        margin-left: -5px;
+        margin-top: 70px;
+        width: 400px;
+    }
+
+    .banner-ball img {
+        width: 70px;
+        position: relative;
+        left: 275px;
+        top: 170px;
+    }
+
+    .banner-player {
+        height: 400px;
+        width: 450px;
+        transition: transform .3s ease-out;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box-button {
+        background-color: white;
+        margin-left: 0px;
+        align-items: center;
+        height: 250px;
+    }
+
+    .button-style {
+        border: 1px solid;
+        padding: 10px 40px;
+        margin: 10px 10px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .view-button {
+        display: none;
+    }
+
+    .footer-container {
+        width: 100vw;
+    }
+
+    .footer-heading {
+        margin: 0px;
+        padding-top: 30px;
+        font-size: 25px;
+        border: 1px solid;
+        width: 100px;
+        margin-left: 150px;
+    }
+
+    hr {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .footer-label ul {
+        font-size: 14px;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .footer-label ul>li {
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        margin-left: -10px;
+    }
+
+    .blogs {
+        margin-right: 0px;
+    }
+
+    /*--------------------------------
+    upcoming match page responsive
+    --------------------------------*/
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+/*-------------------------------------
+            For Tablets
+-------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .top-banner {
+        width: 700px;
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #show {
+        font-size: 35px;
+        width: 300px;
+    }
+
+    .page-info {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    .header-text {
+        margin-left: 130px;
+    }
+
+    .banner-player img {
+        margin-top: 150px;
+        margin-left: -45px;
+        width: 485px;
+    }
+
+    .banner-ball img {
+        width: 85px;
+        position: relative;
+        left: 300px;
+        top: 260px;
+    }
+
+    .container {
+        display: block;
+        width: 700px;
+        margin-left: 120px;
+    }
+
+    .box-button {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 130px;
+        background-color: white;
+        margin-left: 50px;
+    }
+
+    .button-style {
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .footer-container {
+        width: ;
+    }
+
+    .view-button {
+        margin-top: 0px;
+    }
+
+    .footer-container {
+        width: 1000px;
+        height: 700px;
+    }
+
+    .footer-heading {
+        font-weight: 600;
+        font-size: 40px;
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+
+    hr {
+        width: 800px;
+        margin-bottom: 0px;
+    }
+
+    .footer-label ul {
+        width: 700px;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-bottom: 15px;
+        margin-left: 100px;
+    }
+
+    .footer-label ul>li {
+        margin-top: 30px;
+    }
+
+    /*--------------------------------
+    upcoming match page responsive
+    --------------------------------*/
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
