@@ -1,0 +1,89 @@
+/* Google Font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+/* Header Style */
+header {
+    color: white;
+    background-color: black;
+    width: 1321px;
+    height: 646px;
+    background: #161616;
+    border: 1px solid;
+    border-style: none;
+    border-radius: 30px;
+    margin: 50px 140px;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-image {
+    border: 1px solid;
+    border-style: none;
+    margin-top: 70px;
+}
+
+.header-text {
+    width: 531px;
+    height: 424px;
+}
+
+.header-text h2 {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.page-info {
+    margin-top: -50px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.live-button {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #DD0000;
+    border: 1px solid;
+    border-style: none;
+    border-radius: 5px;
+    padding: 16px 25px;
+}
+
+/* Animation Section */
+
+.banner-ball img {
+    width: 100px;
+    position: relative;
+    left: 400px;
+    top: 120px;
+}
+
+.banner-ball {
+    transition: transform .1s ease .01s;
+}
+
+.header-image:hover .banner-ball {
+    transform: translate(-300px, -500px);
+}
+
+.banner-player {
+    height: 500px;
+    width: 500px;
+    transition: transform .3s ease-out;
+}
+
+.header-image:hover .banner-player {
+    transform: rotate(-50deg);
+    transform-origin: top bottom;
+}
+
+
+/* Common Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
