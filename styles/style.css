@@ -20,6 +20,8 @@
     border: 1px solid;
     border-style: none;
     margin-top: 70px;
+    width: 400px;
+    height: 300px;
 }
 
 .header-text {
@@ -61,10 +63,17 @@
 
 .banner-ball {
     transition: transform .1s ease .01s;
+    position: relative;
+}
+
+.banner-player {
+    height: 500px;
+    width: 500px;
+    transition: transform .3s ease-out;
 }
 
 .header-image:hover .banner-ball {
-    transform: translate(-300px, -500px);
+    transform: translate(-1000px, -200px) rotate(20deg);
 }
 
 .banner-player {
@@ -176,6 +185,7 @@ body {
     border-radius: 5px;
     padding: 12px 29px;
     margin-top: 62px;
+    visibility: hidden;
 }
 
 .main-end-button {
@@ -239,7 +249,7 @@ body {
     color: white;
     background-color: #161616;
     height: 444px;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer-heading {
@@ -383,6 +393,7 @@ hr {
         padding-top: 30px;
         font-size: 25px;
         border: 1px solid;
+        border-style: none;
         width: 100px;
         margin-left: 150px;
     }
@@ -447,14 +458,14 @@ hr {
 
     .banner-player img {
         margin-top: 150px;
-        margin-left: -45px;
+        margin-left: -90px;
         width: 485px;
     }
 
     .banner-ball img {
         width: 85px;
         position: relative;
-        left: 300px;
+        left: 250px;
         top: 260px;
     }
 
@@ -489,7 +500,9 @@ hr {
     }
 
     .view-button {
+        visibility: visible;
         margin-top: 0px;
+        margin-left: 200px;
     }
 
     .footer-container {
